@@ -1,0 +1,28 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/peerjs@1.5.5/dist/peerjs.min.js"></script> <!-- peerJS -->
+    <link rel="stylesheet" href="./main.css">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Harmony">
+    <meta name="theme-color" content="#2A2247">
+    <meta name="msapplication-navbutton-color" content="#FF43DC">
+
+    <title id="title">Harmony</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+</head>
+<body>
+    <div id="notifBanner" onclick="output.scroll({
+      top: 1000000,
+      left: 0,
+      behavior: 'smooth'
+    })"></div>
+    <audio src="./assets/ping.wav" id="pinger"></audio>
+    <noscript>Your browser does not support JavaScript!</noscript>
+    <div id="output"></div>
+    <script src="./client.js"></script>
+
+    <div class="msgBar">
+    <input type="text" placeholder="Type here" id="msg-box"> <button onclick="send()"><img src="./assets/send-Arrow.svg"></button>
+    <div class="msgBar">
+</body>

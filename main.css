@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --bg: #2A2247;
+    --txt: #ffffff;
+    --server-img: #FFB3F1;
+    --primary: #FF43DC;
+    --panel: #2A0044;
+}
+
+body{
+    background-color: var(--bg);
+    color: var(--txt);
+    font-family: Kanit, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p{
+    margin: 0;
+}
+
+.msgBar{
+    width: calc(100% - 16px);
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: stretch;
+    padding: 8px;
+}
+.msgBar input{
+    width: -webkit-fill-available;
+    border: none;
+    background-color: var(--panel);
+    color: var(--txt);
+    padding-left: 6px;
+    font-family: Kanit, Verdana, Geneva, Tahoma, sans-serif;
+}
+.msgBar button{
+    aspect-ratio: 1 / 1;
+    height: 30px;
+    border: none;
+    background-color: var(--primary);
+}
+.msgBar button:hover{
+    aspect-ratio: 1 / 1;
+    height: 30px;
+    border: none;
+    background-color: var(--server-img);
+}
+
+#output{
+    height: calc(100% - 30px);
+    overflow-y: scroll;
+}
+
+.servMsgCont{
+    color: var(--server-img);
+    display: flex;
+    justify-content: space-around;
+}
+
+.msgCont{
+    display: flex;
+    gap: 0.5ch;
+}
+.msgCont#unread{
+    background-color: rgba(255, 67, 220, 0.1);
+    border-right: 4px solid #FF43DC;
+}
+
+.username{
+    color: var(--primary)
+}
+#notifBanner{
+    position: absolute;
+    width: 100%;
+    background-color: var(--primary);
+    color: var(--bg);
+    top: 0;
+    left: 0;
+    text-align: center;
+    cursor: pointer;
+}
+.emoji{
+    aspect-ratio: 1;
+    height: 1.8ch;
+    position: relative;
+    top: 4px;
+}
+.full{
+    max-height: 250px;
+}
